@@ -6,15 +6,11 @@
     "sizes": "64x64 32x32 24x24 16x16",
     "type": "image/x-icon"
   }, {
-    "src": "/android-chrome-192x192.png",
-<<<<<<< HEAD
+    "src": "android-chrome-192x192.png",
     "sizes": "192x192",
-=======
-    "sizes": "192X192",
->>>>>>> 8c0964f628b6b75e424b64e0293cc86e44383ae4
     "type": "image/png"
   }, {
-    "src": "/android-chrome-512x512.png",
+    "src": "android-chrome-512x512.png",
     "sizes": "512x512",
     "type": "image/png"
   }],
