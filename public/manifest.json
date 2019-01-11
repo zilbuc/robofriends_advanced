@@ -7,7 +7,11 @@
     "type": "image/x-icon"
   }, {
     "src": "/android-chrome-192x192.png",
+<<<<<<< HEAD
     "sizes": "192x192",
+=======
+    "sizes": "192X192",
+>>>>>>> 8c0964f628b6b75e424b64e0293cc86e44383ae4
     "type": "image/png"
   }, {
     "src": "/android-chrome-512x512.png",
