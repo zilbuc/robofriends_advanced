@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 class CounterButton extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       count: 0
     }
@@ -12,7 +12,7 @@ class CounterButton extends Component {
     this.setState(state => {
       return { count: state.count + 1 }
     }, () => {
-      console.log('State updated!');
+      // console.log('State updated!');
     });
   }
 
@@ -28,7 +28,13 @@ class CounterButton extends Component {
   render() {
     // console.log('Counter Button');
     const { count } = this.state;
-    return <button color={this.props.color} onClick={this.updateCount}>Count: {count}</button>
+    return (
+      <button
+        id='counter'
+        color={this.props.color}
+        onClick={this.updateCount}>Count: {count}
+      </button>
+    );
   }
 }
 
