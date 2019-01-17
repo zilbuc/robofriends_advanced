@@ -1,3 +1,4 @@
+import { apiCall } from './api/api';
 import {
   CHANGE_SEARCH_FIELD,
   REQUEST_ROBOTS_PENDING,
@@ -22,8 +23,7 @@ export const setSearchField = (text) => ({
 // creating an action `requestRobots` that is a higher order function - returns another function; reduxThunk allows this (otherwise REDUX would expect JS object as in setSearchField action)
 export const requestRobots = () => (dispatch) => {
   dispatch({ type: REQUEST_ROBOTS_PENDING });
-  fetch('https://jsonplaceholder.typicode.com/users')
-    .then(response=> response.json())
+  apiCall('https://jsonplaceholder.typicode.com/users')
     .then(data => dispatch({ type: REQUEST_ROBOTS_SUCCESS, payload: data }))
     .catch(error => dispatch({ type: REQUEST_ROBOTS_FAILED, payload: error }))
 }
