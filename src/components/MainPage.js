@@ -31,7 +31,7 @@ class MainPage extends Component {
     // using `state` with react:
     // const { robots } = this.state;
     // using `state` with redux - state is passed as props right from beginning
-    const { onSearchChange, robots, isPending } = this.props;
+    const { onSearchChange, isPending } = this.props;
 
     return (
         <div className='tc'>
